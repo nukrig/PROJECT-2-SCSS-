@@ -1,0 +1,105 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-position: center;
+    padding: 20px 8% 0 8%;
+    .header{
+        display: flex;
+        align-items: center;
+        nav{
+            flex:1;
+            text-align: right;
+            ul li{
+                display: inline-block;
+                margin-left: 40px;
+                a{
+                    color: white;
+                    font-weight: bold;
+                    font-size: 15px;
+                }
+            }
+        }
+        .logo{
+            width: 50px;
+            cursor: pointer;
+        }
+        .burger{
+            width: 50px;
+            cursor: pointer;
+            margin-left: 100px;
+        }
+    }
+    .sections{
+        display: flex;
+        height: 88%;
+        align-items: center;
+        .left-block{
+            width: 50%;
+            h1{
+                font-weight: bold;
+                font-size: 100px;
+                color: white;
+            }
+            p{
+                color: white;
+                font-weight: bold;
+                margin-top: 50px;
+            }
+            button{
+                background-color: white;
+                font-size: 15px;
+                border-radius: 40px;
+                border:0;
+                margin-top: 50px;
+                width: 180px;
+                padding: 20px;
+            }
+        }
+        .right-block{
+            width: 50%;
+            .card{
+                width: 200px;
+                height: 230px;
+                display: inline-block;
+                border-radius: 20px;
+                padding: 15px 25px;
+                cursor: pointer;
+                margin: 10px 15px;
+                background-size: cover;
+                background-position: center;
+                transition: all 2s;
+                &:hover{
+                    transform: translateY(-10px);
+                    box-shadow: 20px 20px 20px saddlebrown;
+                }
+                &:nth-child(1){
+                    background-image: url(../images/pic-1.png); 
+                }
+                &:nth-child(2){
+                    background-image: url(../images/pic-2.png); 
+                }
+                &:nth-child(3){
+                    background-image: url(../images/pic-3.png); 
+                }
+                &:nth-child(4){
+                    background-image: url(../images/pic-4.png); 
+                }
+                h5{
+                    font-weight: bolder;
+                    text-shadow: 5px 5px 10px black;
+                    color: white;
+                    margin-bottom: 20px;
+                }
+                p{
+                    color: whitesmoke;
+                    text-shadow: 5px 5px 10px black;
+
+                }
+            }
+
+        }
+    }
+    
+}

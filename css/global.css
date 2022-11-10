@@ -1,0 +1,160 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/background.png);
+  background-size: cover;
+  background-position: center;
+  padding: 20px 8% 0 8%;
+}
+.container .header {
+  display: flex;
+  align-items: center;
+}
+.container .header nav {
+  flex: 1;
+  text-align: right;
+}
+.container .header nav ul li {
+  display: inline-block;
+  margin-left: 40px;
+}
+.container .header nav ul li a {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+.container .header .logo {
+  width: 50px;
+  cursor: pointer;
+}
+.container .header .burger {
+  width: 50px;
+  cursor: pointer;
+  margin-left: 100px;
+}
+.container .sections {
+  display: flex;
+  height: 88%;
+  align-items: center;
+}
+.container .sections .left-block {
+  width: 50%;
+}
+.container .sections .left-block h1 {
+  font-weight: bold;
+  font-size: 100px;
+  color: white;
+}
+.container .sections .left-block p {
+  color: white;
+  font-weight: bold;
+  margin-top: 50px;
+}
+.container .sections .left-block button {
+  background-color: white;
+  font-size: 15px;
+  border-radius: 40px;
+  border: 0;
+  margin-top: 50px;
+  width: 180px;
+  padding: 20px;
+}
+.container .sections .right-block {
+  width: 50%;
+}
+.container .sections .right-block .card {
+  width: 200px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 15px 25px;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-size: cover;
+  background-position: center;
+  transition: all 2s;
+}
+.container .sections .right-block .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 20px 20px 20px saddlebrown;
+}
+.container .sections .right-block .card:nth-child(1) {
+  background-image: url(../images/pic-1.png);
+}
+.container .sections .right-block .card:nth-child(2) {
+  background-image: url(../images/pic-2.png);
+}
+.container .sections .right-block .card:nth-child(3) {
+  background-image: url(../images/pic-3.png);
+}
+.container .sections .right-block .card:nth-child(4) {
+  background-image: url(../images/pic-4.png);
+}
+.container .sections .right-block .card h5 {
+  font-weight: bolder;
+  text-shadow: 5px 5px 10px black;
+  color: white;
+  margin-bottom: 20px;
+}
+.container .sections .right-block .card p {
+  color: whitesmoke;
+  text-shadow: 5px 5px 10px black;
+}/*# sourceMappingURL=global.css.map */
